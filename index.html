@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap link to use bootstrap classes -->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </head>
+  <!-- navbar from bootstrap -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#home">Team 5</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#about-us">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#sources">Sources</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+<!-- home section -->
+<div id = "home">
+  <!-- Heading -->
+  <h class = "home1">Home</h>
+
+  <!-- Inputs -->
+  <div class = "input">
+    <p>Name:
+      <input type = "text" size = "5" name = "Name" id = "name">
+    </p>
+
+    <p>Age: 
+      <input type = "text" size = "5" name = "age" id = "age"> years
+    </p>
+
+    <p>Height: 
+      <input type = "text" size = "5" name = "height" id = "height"> inches 
+    </p>
+
+    <p> Weight: 
+      <input type = "text" size = "5" name = "weight" id = "weight"> lbs 
+    </p>  
+
+    <p> Select Sex: 
+      <select name="Sex" id = "sex">
+      <option value="male">male</option>
+      <option value="female">female</option>
+    </select> </p>
+
+    <p id = "result">hi</p>
+
+  </div>
+
+</div>
+
+<div class="button">
+  <!-- buttons use BootStrap class -->
+  <button id = "bmi" type="button" class="btn btn-dark">Calculate BMI</button>
+
+  <button id = "workout" type="button" class="btn btn-dark">Generate Workout Plan</button>
+
+  <button id = "bmr" type="button" class="btn btn-dark">Basal Metabolic Rate</button>
+
+  <button id = "iw" type="button" class="btn btn-dark">Ideal Weight</button>
+
+</div>
+
+  <!-- table from bootstrap -->
+  <table class="table table-dark">
+    <thead class = "thead-light">
+      <tr>
+        <th scope="col">Day</th>
+        <th scope="col">Plan</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td scope="row">Monday</td>
+        <td id = "mon"></td>
+      </tr>
+      <tr>
+        <td>Tuesday</td>
+        <td id = "tue"></td>
+      </tr>
+      <tr>
+        <td>Wednesday</td>
+        <td id = "wed"></td>
+      </tr>
+      <tr>
+        <td>Thursday</td>
+        <td id = "thu"></td>
+      </tr>
+      <tr>
+        <td>Friday</td>
+        <td id = "fri"></td>
+      </tr>
+    </tbody>
+  </table>
+
+<!-- About us -->
+<div id = "about-us">
+  <!-- Heading -->
+  <h class = "bout1">About Us</h>
+  
+  <p class = "descript">We are Team 5 from P3 Special Topics in Computer Science. We chose to work on a project that would help people achieve their fitness goals, as this is something that can help all people. Our algorithms are tailored to help everyone, but there is more precision for individuals between the ages of 15 and 45. Whether you need a sustainable workout plan to support weight-gain or weight-loss, this website will have it all. Since we are not trained medical professionals, all of the formulas and benchmarks we use are cited and supported by real professionals.​</p>
+
+</div>
+
+<!-- Sources -->
+<div id = "sources">
+  <!-- heading -->
+  <h class = "sources-gang">Sources</h>
+  
+  <!-- Links -->
+
+  <!-- cdc -->
+  <p>
+    <a href = "www.cdc.gov/">www.cdc.gov/</a>
+  </p>
+<!-- Harvard -->
+  <p>
+    <a href = "www.health.harvard.edu/">www.health.harvard.edu/</a>
+  </p>
+  <!-- MayoClinic -->
+  <p>
+    <a href = "www.mayoclinic.org/">www.mayoclinic.org/</a>
+  </p>
+  <!-- National Institute on health -->
+  <p>
+    <a href = "www.nia.nih.gov/">www.nia.nih.gov/</a>
+  </p>
+  <!-- omni calculator -->
+  <p>
+    <a href = "www.omnicalculator.com/">www.omnicalculator.com/</a>
+  </p>
+  <!-- BMI Calculator -->
+  <p>
+    <a href = "www.bmi-calculator.net/">www.bmi-calculator.net/</a>
+  </p>
+  <!-- Garnet Health -->
+  <p>
+    <a href = "https://www.garnethealth.org/news/basal-metabolic-rate-calculator">https://www.garnethealth.org/news/basal-metabolic-rate-calculator</a>
+  </p>
+
+</div>
+  <script src="index.js"></script>
+</html>
